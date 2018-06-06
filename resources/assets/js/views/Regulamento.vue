@@ -25,7 +25,7 @@
             <div class="col s12">
 
               <h4>1. COMO PARTICIPAR</h4>
-              <p>Preencher as apostas, na folha oficial Mogibahr, entregar e efetuar o pagamento no valor de R$30,00 até o dia 11/06/2018 às 18:00. Sendo que R$5,00 ficara retido para organização e manutenção do bolão.</p>
+              <p>Preencher as apostas, na folha oficial Mogibahr, entregar e efetuar o pagamento no valor de R$30,00. Sendo que R$5,00 ficara retido para organização e manutenção do bolão.</p>
 
               <br/>
 
