@@ -2,14 +2,20 @@
 <div>
     <div class="container">
         <div class="row">
-            <div class="col s12 m6 hide-on-small-only">
+            <div class="col s12">
                 <div class="slider">
+                  <!-- hide-on-small-only -->
                     <ul class="slides">
                       <li>
                         <img src="images/index/slider_one.jpg">
                         <div class="caption center-align">
-                          <h3>Bolão MogibahR Copa do Mundo 2018</h3>
-                          <h5 class="light grey-text text-lighten-3">Leia o regulamento e participe do bolão MogibahR</h5>
+                          <h3>Bolão MogibahR</h3>
+                          <h5 class="light grey-text text-lighten-3">Leia o regulamento e participe</h5>
+                        </div>
+                      </li>
+                      <li>
+                        <img src="images/index/bolao.jpg">
+                        <div class="caption center-align">
                         </div>
                       </li>
                     </ul>
@@ -75,7 +81,6 @@
             </div>
         </div>
     </div>
-</div>	
 </template>
 
 <script>
