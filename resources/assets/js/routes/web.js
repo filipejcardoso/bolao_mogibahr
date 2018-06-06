@@ -19,7 +19,7 @@ const router = new VueRouter({
             	path: 'regulamento',component: Regulamento
           	},
 		  	{
-            	path: 'resumo',component: Regulamento
+            	path: 'resumo',component: Resumo
           	},
 		  	{
             	path: 'admin_13asfml',component: Admin
