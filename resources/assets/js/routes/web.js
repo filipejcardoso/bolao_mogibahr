@@ -13,13 +13,13 @@ const router = new VueRouter({
 	mode: 'hash',
 	routes: [
 		{ path: '*', component: NotFound },
-		{ path: '/', component: Template, redirect: '/resumo', 
+		{ path: '/', component: Template, redirect: '/regulamento', 
 		  children: [
 		  	{
             	path: 'regulamento',component: Regulamento
           	},
 		  	{
-            	path: 'resumo',component: Resumo
+            	path: 'resumo',component: Regulamento
           	},
 		  	{
             	path: 'admin_13asfml',component: Admin
