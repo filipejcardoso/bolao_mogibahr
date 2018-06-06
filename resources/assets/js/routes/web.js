@@ -13,7 +13,7 @@ const router = new VueRouter({
 	mode: 'hash',
 	routes: [
 		{ path: '*', component: NotFound },
-		{ path: '/', component: Template, redirect: '/regulamento', 
+		{ path: '/', component: Template, redirect: '/resumo', 
 		  children: [
 		  	{
             	path: 'regulamento',component: Regulamento
