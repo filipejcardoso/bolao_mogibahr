@@ -16,5 +16,10 @@ Route::group(['prefix' =>'participantes'],function()
 		Route::patch('{id}', ['uses' => 'ApostasController@update']);
 	});
 });
+Route::group(['prefix' =>'/jogos'],function()
+{
+	Route::get('', ['uses' => 'JogosController@index']);
+	Route::patch('{id}', ['uses' => 'JogosController@update']);
+});
 
 
