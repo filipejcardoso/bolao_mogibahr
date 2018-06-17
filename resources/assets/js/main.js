@@ -12,6 +12,8 @@ import Classificacao from './components/Classificacao.vue'
 import Participante from './components/Participante.vue'
 import ListaParticipantes from './components/ListaParticipantes.vue'
 import Apostas from './components/Apostas.vue'
+import ListaJogos from './components/ListaJogos.vue'
+import JogoAtual from './components/JogoAtual.vue'
 
 //============VUE=====================
 Vue.use(VueAxios, axios);
@@ -22,6 +24,8 @@ Vue.component('classificacao',Classificacao);
 Vue.component('participante',Participante);
 Vue.component('lista-participantes',ListaParticipantes);
 Vue.component('apostas',Apostas);
+Vue.component('lista-jogos',ListaJogos);
+Vue.component('jogo-atual',JogoAtual);
 
 //============CONSTANTES=====================
 window.api = "bolao.mogibahr.com.br";
