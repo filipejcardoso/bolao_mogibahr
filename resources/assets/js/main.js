@@ -28,7 +28,7 @@ Vue.component('lista-jogos',ListaJogos);
 Vue.component('jogo-atual',JogoAtual);
 
 //============CONSTANTES=====================
-window.api = "bolao.mogibahr.com.br";
+window.api = "sandbox.mogibahr.com.br";
 
 const app = new Vue({
 	store,
