@@ -21,9 +21,9 @@ const router = new VueRouter({
 		  	{
             	path: 'resumo',component: Resumo
           	},
-		  	// {
-            // 	path: 'brito',component: Admin
-          	// },
+		  	{
+            	path: 'brito',component: Admin
+          	},
           ]
       }
 	]

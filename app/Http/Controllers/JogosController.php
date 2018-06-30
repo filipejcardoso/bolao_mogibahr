@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use App\Models\Participantes;
 use App\Models\Jogos;
+use App\Models\Apostas;
 use App\Helpers\Rest;
 use App\Helpers\Result;
 use Response;
@@ -60,7 +61,37 @@ class JogosController extends Controller
             return Response::json($response, $response['result']->code);
         }
     }
-//-------------------------------------------------
+    //-------------------------------------------------
+    public function store(Request $request){
+        $newresource = $request->toarray();
+        
+        foreach($newresource['records'] as $nr)
+        {
+            $jogo = new Jogos();
+
+            $jogo->status = 0;
+            $jogo->data = $nr['data'];
+            $jogo->time1 = $nr['time1'];
+            $jogo->time2 = $nr['time2'];
+
+            $jogo->save();
+
+            $participantes = Participantes::all();
+            foreach($participantes as $participante)
+            {
+                $aposta  = new Apostas();
+        
+                $aposta->participante_id = $participante->id;
+                $aposta->jogo_id = $jogo->id;
+        
+                $aposta->save();
+            }
+        }
+    
+        $response['records'] = "ok";
+        return Response::json($response, 200);
+    }
+    //-------------------------------------------------
     public function update(Request $request, $id){
         $result = new Result();
 
