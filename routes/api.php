@@ -19,7 +19,7 @@ Route::group(['prefix' =>'participantes'],function()
 Route::group(['prefix' =>'/jogos'],function()
 {
 	Route::get('', ['uses' => 'JogosController@index']);
-	// Route::post('', ['uses' => 'JogosController@store']);
+	Route::post('', ['uses' => 'JogosController@store']);
 	Route::patch('{id}', ['uses' => 'JogosController@update']);
 });
 
